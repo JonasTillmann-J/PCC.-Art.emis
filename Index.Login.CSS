@@ -1,0 +1,29 @@
+*{
+    margin: 0 0;
+    font-family: monospace;
+}
+body{
+    background-image: url(./imgs/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.imgLogo{
+    margin: 20px 20px;
+    width:17%;
+    height:14%;
+    border: 5px solid orange;
+    border-radius: 100%;
+}
+.menusub{
+    float: right;
+}
+.TLog{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    width: 35%;
+    height:90% ;
+    background-color: black;
+    border: 5px solid  red;
+    border-radius: 50px;
+}
