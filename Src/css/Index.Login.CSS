@@ -1,0 +1,96 @@
+:root{
+    --tamanho: 25%;
+    --margem: 20px;
+    --corTLog:rgba(0, 0, 0, 0.6);
+    --tamanhobotao: 130px;
+    --tamanhoP:90%;
+}
+
+*{
+    margin: 0 0;
+    font-family: monospace;
+}
+/*
+body{
+    background-image: url(./imgs/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:initial;
+}
+*/
+.imgLogo{
+    position: absolute;
+    left: 65%;
+    margin: 20px 20px;
+    width:var(--tamanho);
+    height:calc(var(--tamanho)- 1%);
+    border: 5px solid orange;
+    border-radius: 100%;
+}
+.menusub{
+    float: right;
+}
+.TLog{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 35%;
+    height:100% ;
+    background-color: var(--corTLog);
+    /*border: 5px solid  rgb(0, 0, 0);
+    border-top-right-radius: 50px;*/
+}
+.txtLogin{
+    color: aliceblue;
+    font-size: 4em;
+    margin: var(--margem) var(--margem);
+    font-weight: bold;
+}
+.entrar{
+    position: relative;
+    top: 50%;
+    align-items: center;
+    text-align: center;
+}
+.btnEntrar{
+    font-size: 35px;
+    background-color: aquamarine;
+    border: 5px solid  black;
+    border-radius: 23px;
+    color: aliceblue;
+    width: calc(var(--tamanhobotao)+5px);
+    height: calc(var(--tamanhobotao)/2);
+}
+.txtEmail{ 
+    border-radius: 50px;
+    position: relative;
+    left: 3%;
+    width: var(--tamanhoP);
+    
+}
+.txtE{
+    position: relative;
+    top: 30%;
+    font-size: 2em;
+    color: white;
+}
+.emailIn{
+    width: var(--tamanhoP);
+    height: var(--tamanhoP);
+    background-color: black;
+}
+.inputEmail{
+    color: black;
+}
+.txtSenha{
+    color: black;
+}
+.txtS{
+    color: black;
+}
+.senhaIn{
+    color: black;
+}
+.inputSenha{
+    color: black;
+}
