@@ -11,15 +11,18 @@ HTML:Construção Borpo Base Do Site
 CSS: Estilização Do Site
 JAVASCRIPT: Parte Lógica embarcada no Arquivo Principal
 PYTHON: Linguagem de Ligação entre o Banco de Dados
-SQL MYSQL: Linguagem do Banco de Dados ...
+SQL MYSQL: Linguagem do Banco de Dados
+...
 
 FrameWorks de uso direto:
 
 Django: FrameWork para a Ligação do Banco de Dados e Segurança de Dados e O gerenciamento e visualização dos Dados
-Bootstrap: FrameWork para facilitação da estilização|Estilização manual …
+Bootstrap: FrameWork para facilitação da estilização|Estilização manual
+…
 
 Serviços de uso direto:
 Laragon: Servidor de HostLocal
 Visual Studio Code: Editor de Texto e Codificador
 Pycharm: Editor de Texto e Codificador para o PYTHON
-MySQL Workbench: Gerenciador do Banco de Dados para a compilação para o SQL …
+MySQL Workbench: Gerenciador do Banco de Dados para a compilação para o SQL
+...
