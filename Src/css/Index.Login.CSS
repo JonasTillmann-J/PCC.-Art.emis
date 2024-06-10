@@ -5,7 +5,6 @@
     --tamanhobotao: 130px;
     --tamanhoP:90%;
 }
-
 *{
     margin: 0 0;
     font-family: monospace;
@@ -19,12 +18,12 @@ body{
 }
 */
 .imgLogo{
-    position: absolute;
+    position: relative;
     left: 65%;
     margin: 20px 20px;
     width:var(--tamanho);
     height:calc(var(--tamanho)- 1%);
-    border: 5px solid orange;
+    border: 5px solid transparent;
     border-radius: 100%;
 }
 .menusub{
@@ -34,13 +33,15 @@ body{
     position: absolute;
     top: 0%;
     left: 0%;
-    width: 35%;
+    width: 559px;
     height:100% ;
     background-color: var(--corTLog);
-    /*border: 5px solid  rgb(0, 0, 0);
-    border-top-right-radius: 50px;*/
 }
-.txtLogin{
+.txtlog{
+    position: relative;
+    
+}
+.txtEntrar{
     color: aliceblue;
     font-size: 4em;
     margin: var(--margem) var(--margem);
@@ -61,12 +62,10 @@ body{
     width: calc(var(--tamanhobotao)+5px);
     height: calc(var(--tamanhobotao)/2);
 }
-.txtEmail{ 
-    border-radius: 50px;
+.txtEmail .txtSenha { 
     position: relative;
-    left: 3%;
+    left: 2%;
     width: var(--tamanhoP);
-    
 }
 .txtE{
     position: relative;
@@ -74,24 +73,40 @@ body{
     font-size: 2em;
     color: white;
 }
+.txtS{
+    position: relative;
+    font-size: 2em;
+    color: white;
+}
 .emailIn{
-    width: var(--tamanhoP);
-    height: var(--tamanhoP);
-    background-color: black;
+    width: 497px;
+    height: 42px;
+    background-color: white;
 }
 .inputEmail{
+    left: 10%;
+    border: 3px solid black;
+    border-radius: 15px;
     color: black;
+    width: 497px;
+    height: 42px;
+    font-size: 20px;
+    font-weight: bold;
     background-color: aliceblue;
 }
-.txtSenha{
-    color: black;
-}
-.txtS{
-    color: black;
-}
 .senhaIn{
-    color: black;
+    width: 497px;
+    height: 42px;
+    background-color: white;
 }
 .inputSenha{
+    left: 10%;
+    border: 3px solid black;
+    border-radius: 15px;
     color: black;
+    width: 497px;
+    height: 42px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aliceblue;
 }

@@ -1,5 +1,3 @@
-const ava = 1
-
-document.getElementById("btnEntrar").addEventListener("click", function teste() {
+function btnentrar() {
     alert("funfo o botão de entrar")
-});
+}

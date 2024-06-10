@@ -19,35 +19,49 @@
         </nav>
     </section>
     <section class="TLog" id="TLog">
-        <!--
-        <img class="imgLogo" src="./imgs/Angolaino.png" alt="Logo da escola Artmoneta">
-        -->
-        <div class="txtlog" id="txlog">
-            <p class="txtLogin">Login</p>
-        </div>
-        <div class="txtEmail">
-            <p class="txtE">
-                E-mail
+        <img class="imgLogo" src="/imgs/LogoArtMoneta.png" alt="Logo da escola Artmoneta">
+        <div class="txtlog" id="txtlog">
+            <p class="txtEntrar">
+                Entrar
             </p>
         </div>
-        <div class="emailIn">
-            <input type="email" name="Credencial-email-login" id="inputEmail" class="inputEmail">
-        </div>
-        <div class="txtSenha">
-            <p class="txtS">
-                Senha
-            </p>
-        </div>
-        <div class="senhaIn">
-            <input type="password" name="" id="" class="inputSenha">
-        </div>
+            <section class="elementosTLog" style="position: relative; left: 5%;">
+            <div class="txtEmail">
+                <p class="txtE">
+                    E-mail
+                </p>
+            </div>
+            <section class="emailsec">
+                <div class="emailIn">
+                    <input type="email" name="Credencial-email-login" id="inputEmail" class="inputEmail" placeholder="Informe Seu Email">
+                </div>
+            </section>
+            <br>
+            <br>
+            <div class="txtSenha">
+                <p class="txtS">
+                    Senha
+                </p>
+            </div>
+            <section class="senhasec">
+                <div class="senhaIn">
+                    <input type="password" name="Credencial-senha-login" id="inputSenha" class="inputSenha" placeholder="Informe Sua Senha">
+                </div>
+            </section>
+        </section>
         <div class="entrar">
-            <button class="btnEntrar" id="btnEntrar">
+            <button class="btnEntrar" id="btnEntrar" onclick="btnentrar()">
                 Entrar
             </button>
         </div>
     </section>
-    <div></div>
+    <section class="footer">
+        <footer class="txtfooter">
+            <p>
+                
+            </p>
+        </footer>
+    </section>
 </body>
 <script src="/Src/js/Script.Login.js"></script>
 </html>
