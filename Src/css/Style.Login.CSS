@@ -9,21 +9,37 @@
     margin: 0 0;
     font-family: monospace;
 }
-/*
 body{
-    background-image: url(./imgs/fundo.png);
+    background-image: url(/imgs/fundobonito.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:initial;
 }
-*/
+.menusub{
+    position: relative;
+    background-color: var(--corTLog);
+    width: 70.3%;
+    height: 40px;
+    align-items: center;
+    text-align: center;
+}
+.nave{
+    display: flex;
+    justify-content:space-around;
+}
+.ele{
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+}
 .imgLogo{
     position: relative;
     left: 65%;
     margin: 20px 20px;
     width:var(--tamanho);
     height:calc(var(--tamanho)- 1%);
-    border: 5px solid transparent;
     border-radius: 100%;
 }
 .menusub{
@@ -39,7 +55,6 @@ body{
 }
 .txtlog{
     position: relative;
-    
 }
 .txtEntrar{
     color: aliceblue;
@@ -49,7 +64,7 @@ body{
 }
 .entrar{
     position: relative;
-    top: 50%;
+    top: 40%;
     align-items: center;
     text-align: center;
 }

@@ -1,0 +1,7 @@
+:root{
+    --corTLog:rgba(0, 0, 0, 0.6);
+}
+*{
+    font-family: monospace;  
+    margin: 0 0;
+}
