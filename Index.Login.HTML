@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="/Src/css/Style.Login.CSS">
 </head>
 <body>
-    <section class="menusub" id="menusub">
-        <nav class="nave" id="nave">
-            <a href="#" class="ele" id="ele">Sobre nós</a>
-            <a href="#" class="ele" id="ele">Nossa Escola</a>
-            <a href="#" class="ele" id="ele">Contatos</a>
+    <section class="menusub">
+        <nav class="nave">
+            <a href="#" class="ele">Sobre nós</a>
+            <a href="#" class="ele">Nossa Escola</a>
+            <a href="#" class="ele">Contatos</a>
             <a href="/Index.Cadrastro.HTML" class="ele" id="ele">Cadastrar-se</a>
         </nav>
     </section>
-    <section class="TLog" id="TLog">
+    <section class="TLog">
         <img class="imgLogo" src="/imgs/LogoArtMoneta.png" alt="Logo da escola Artmoneta">
-        <div class="txtlog" id="txtlog">
+        <div class="txtlog">
             <p class="txtEntrar">
                 Entrar
             </p>
@@ -33,7 +33,7 @@
             </div>
             <section class="emailsec">
                 <div class="emailIn">
-                    <input type="email" name="Credencial-email-login" id="inputEmail" class="inputEmail" placeholder="Informe Seu Email">
+                    <input type="email" name="Credencial-email-login" class="inputEmail" placeholder="Informe Seu Email">
                 </div>
             </section>
             <br>
@@ -46,22 +46,17 @@
             <section class="senhasec">
                 <div class="senhaIn">
                     <input type="password" name="Credencial-senha-login" id="inputSenha" class="inputSenha" placeholder="Informe Sua Senha">
+                    <img onclick="eyeopen()" class="eyeopen" src="/imgs/eye-close.png" alt="Visualizar senha - on" id="eyes">
                 </div>
             </section>
         </section>
         <div class="entrar">
-            <button class="btnEntrar" id="btnEntrar" onclick="btnentrar()">
+            <button class="btnEntrar" onclick="btnentrar()">
                 Entrar
             </button>
         </div>
     </section>
-    <section class="footer">
-        <footer class="txtfooter">
-            <p>
-                
-            </p>
-        </footer>
-    </section>
 </body>
-<script src="/Src/js/Script.Login.js"></script>
+<script src="/Src/js/Script.Login.js">
+</script>
 </html>

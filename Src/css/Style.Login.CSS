@@ -10,6 +10,7 @@
     font-family: monospace;
 }
 body{
+    display: block;
     background-image: url(/imgs/fundobonito.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,7 +97,8 @@ body{
 .emailIn{
     width: 497px;
     height: 42px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
 }
 .inputEmail{
     left: 10%;
@@ -112,7 +114,8 @@ body{
 .senhaIn{
     width: 497px;
     height: 42px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
 }
 .inputSenha{
     left: 10%;
@@ -124,4 +127,21 @@ body{
     font-size: 20px;
     font-weight: bold;
     background-color: aliceblue;
+}
+.eyeopenBTN{
+    background-color: transparent;
+    border: 0px solid transparent;
+    position: absolute;
+    top: 85%;
+    left: 83%;
+    width: 30px;
+    height: 25px;
+}
+.eyeopen{
+    cursor: pointer;
+    position: absolute;
+    top: 85%;
+    left: 84%;
+    width: 30px;
+    height: 20px;
 }
