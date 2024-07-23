@@ -4,9 +4,11 @@
     --corTLog:rgba(0, 0, 0, 0.6);
     --tamanhobotao: 130px;
     --tamanhoP:90%;
+    --tamanhoLogotxt: 300px;
 }
 *{
-    margin: 0 0;
+    margin: 0px 0px;
+    padding: 0px 0px;
     font-family: monospace;
 }
 body{
@@ -16,24 +18,42 @@ body{
     background-repeat: no-repeat;
     background-position:initial;
 }
+.logoemtexto{
+    display: block;
+    top: -25px;
+    left: 0px;
+    padding: 0px 0px;
+    margin: 5px 5px;
+    position: absolute;
+    width: var(--tamanhoLogotxt);
+    height: calc(var(--tamanhoLogotxt)/2);
+}
 .menusub{
     position: relative;
-    background-color: var(--corTLog);
-    width: 70.3%;
+    width: 100%;
     height: 40px;
     align-items: center;
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 .nave{
+    top: 23px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid black;
+    border-radius: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 29.5%;
+    width: 700px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 .ele{
+    margin: 5px;
+    color: rgb(0, 0, 0);
     position: relative;
-    top: 10px;
     text-decoration: none;
-    color: aliceblue;
-    font-size: 20px;
+    font-size: 22px;
 }
 .imgLogo{
     position: relative;
@@ -43,33 +63,38 @@ body{
     height:calc(var(--tamanho)- 1%);
     border-radius: 100%;
 }
-.menusub{
-    float: right;
-}
 .TLog{
+    display: block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border: 5px solid black;
+    border-radius: 50px;
     position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 15%;
+    left: 33%;
     width: 559px;
-    height:100% ;
+    height:70% ;
     background-color: var(--corTLog);
 }
 .txtlog{
     position: relative;
 }
 .txtEntrar{
+    position: relative;
+    top: -50px;
     color: aliceblue;
-    font-size: 4em;
+    font-size: 4.5em;
     margin: var(--margem) var(--margem);
     font-weight: bold;
 }
 .entrar{
     position: relative;
-    top: 40%;
+    top: 50px;
     align-items: center;
     text-align: center;
 }
 .btnEntrar{
+    position: relative;
     font-size: 35px;
     background-color: aquamarine;
     border: 5px solid  black;
