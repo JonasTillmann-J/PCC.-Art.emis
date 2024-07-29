@@ -1,0 +1,8 @@
+PalhetaDeCores{
+ background-color:rgba(0, 0, 0, 0.6);/*Cor de Fundo ou lugares translucidos*/
+ background-color: rgb(42, 93, 124); /*Cor base 1*/
+ background-color: rgb(88, 148, 205);/*Cor Segundaria 1*/
+ background-color: rgb(0, 0, 0);/*Cor para letras ou podendo ser aliceblue dependendo da ocasião e etc*/
+ background-color: rgb(247, 216, 160);/*Cor Base 2*/
+ background-color: rgb(255, 191, 73);/*Cor Segundaria 2*/
+} 

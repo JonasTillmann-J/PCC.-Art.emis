@@ -1,7 +1,7 @@
 :root{
     --tamanho: 25%;
     --margem: 20px;
-    --corTLog:rgba(0, 0, 0, 0.6);
+    --corTLog:rgba(0, 0, 0, 0.6); /*Cor de fundo padrão de projeto*/
     --tamanhobotao: 130px;
     --tamanhoP:90%;
     --tamanhoLogotxt: 300px;
@@ -28,33 +28,63 @@ body{
     width: var(--tamanhoLogotxt);
     height: calc(var(--tamanhoLogotxt)/2);
 }
-.menusub{
-    position: relative;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-.nave{
-    top: 23px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 5px solid black;
-    border-radius: 50px;
-    color: rgb(0, 0, 0);
-    position: relative;
-    left: 29.5%;
-    width: 700px;
+.Nav{
     display: flex;
-    justify-content:space-between;
+    width: auto;
+    height: auto;
+    background-color: #ff000000;
+    align-items: center;
 }
-.ele{
-    margin: 5px;
-    color: rgb(0, 0, 0);
+.nav{
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+    display: block;
+    position: absolute;
+    width: 25% auto;
+    height: 4%;
+    border: 5px solid rgb(88, 148, 205);
+    border-radius: 50px;
+    background-color: var(--corTLog);
+}
+.nav .ulN {
     position: relative;
-    text-decoration: none;
-    font-size: 22px;
+    top: 5px;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
 }
+
+.nav .ulN .liN {
+    margin: 0px 20px 0px 20px;
+}
+
+.nav .ulN .liN .eleN {
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+}
+
+.nav .ulN .liN .eleN::after {
+    content: ""; /*estilo da animção*/
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -4px; /*Muda altura do sublinhado*/
+    left: 0;
+    background-color:rgb(88, 148, 205);
+    transform-origin: bottom right;
+    transition: transform 0.9s ease-out;
+}
+
+.nav .ulN .liN .eleN:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 .imgLogo{
     position: relative;
     left: 65%;
@@ -64,25 +94,23 @@ body{
     border-radius: 100%;
 }
 .TLog{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: block;
+    position: absolute;
     margin: 0px 0px;
     padding: 0px 0px;
     border: 5px solid black;
     border-radius: 50px;
-    position: absolute;
-    top: 15%;
-    left: 33%;
     width: 559px;
     height:70% ;
     background-color: var(--corTLog);
 }
-.txtlog{
-    position: relative;
-}
 .txtEntrar{
     position: relative;
     top: -50px;
-    color: aliceblue;
+    color: rgb(247, 216, 160);
     font-size: 4.5em;
     margin: var(--margem) var(--margem);
     font-weight: bold;
@@ -92,16 +120,16 @@ body{
     top: 50px;
     align-items: center;
     text-align: center;
+    width: 100%;
+    height: 10%;
 }
 .btnEntrar{
-    position: relative;
     font-size: 35px;
-    background-color: aquamarine;
-    border: 5px solid  black;
-    border-radius: 23px;
-    color: aliceblue;
-    width: calc(var(--tamanhobotao)+5px);
-    height: calc(var(--tamanhobotao)/2);
+    background-color: var(--corTLog);
+    border-radius: 25px;
+    border: 5px solid  rgb(0, 0, 0);
+    width: 40%;
+    height: 100%;
 }
 .txtEmail .txtSenha { 
     position: relative;

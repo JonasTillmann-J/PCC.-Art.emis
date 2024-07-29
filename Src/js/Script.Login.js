@@ -9,12 +9,6 @@ function eyeopen(){
         imgeye.src = "/imgs/eye-close.png"
     }
 }
-/*
-eye-close.png
-
-eyeopen.onclick = function(){
-    
-}*/
 function btnentrar() {
     alert("funfo o botão de entrar")
 }
