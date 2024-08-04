@@ -1,31 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="keywords" content="cadrastro, Escola de Música, Escola de Artes, música, arte, Claude Monet, escola de música e arte, aprender música, aprender arte, pintura, escultura, artes plásticas, história da arte">
-    <meta name="description" content="Art.emis_1.0.0_Pre-Alpha. Site para relações entre pais alunos e a escola artmonete que falara sobre nós e tudo oq somos - sesão cadrastro">
-    <meta name="Author" content="Jonas Tillmann Junior">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro/fase1</title>
-    <link rel="stylesheet" href="/Src/css/Style.Cadrastro.CSS">
-</head>
-<body>
-    <section class="Nav">
-            <nav class="nav">
-                <ul class="ulN">
-                    <li class="liN"><a class="eleN" href="#">Sobre nós</a></li>
-                    <li class="liN"><a class="eleN" href="#">Nossa Escola</a></li>
-                    <li class="liN"><a class="eleN" href="#">Contatos</a></li>
-                    <li class="liN"><a class="eleN" href="/Index.Login.HTML">Login</a></li>
-                </ul>
-            </nav>
-    </section>
-</body>
-</html>
-  <!--  <nav class="nave">
-            <a href="#" class="ele">Sobre nós</a>
-            <a href="#" class="ele">Nossa Escola</a>
-            <a href="#" class="ele">Contatos</a>
-            <a href="/Index.Cadrastro.HTML" class="ele" id="ele">Cadastrar-se</a>
-        </nav>
-    -->
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta name="keywords" content="Cadastro, escola de música, escola de artes, aprender música, aprender arte">
+     <meta name="description" content="Art.emis_1.0.0_Pre-Alpha. Tela de cadastro para a escola Artmoneta.">
+     <meta name="author" content="Jonas Tillmann Junior">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cadastro</title>
+     <link rel="stylesheet" href="/Src/css/Style.Cadrastro.CSS">
+ </head>
+ <body>
+     <section class="Nav">
+         <nav class="nav">
+             <ul>
+                 <li><a href="#">Sobre nós</a></li>
+                 <li><a href="#">Nossa Escola</a></li>
+                 <li><a href="/a.html">Contatos</a></li>
+                 <li><a href="/Index.Login.HTML">Entrar</a></li>
+             </ul>
+         </nav>
+     </section>
+     <form action="/Index.Cadastro.HTML" method="post">   
+         <section class="TLog">
+             <img class="imgLogo" src="/imgs/LogoArtMoneta.png" alt="Logo da escola Artmoneta">
+             <div class="txtlog">
+                 <p class="txtEntrar">Cadastrar-se</p>
+             </div>
+             <section class="elementosTLog" style="position: relative; left: 5%;">
+                 <div class="txtField">
+                     <p class="txtLabel">Nome De Usuario</p>
+                 </div>
+                 <section class="fieldsec">
+                     <div class="inputField">
+                         <input type="text" name="nome" class="inputText" placeholder="Informe Seu Nome" required>
+                     </div>
+                 </section>
+                 <div class="txtField">
+                     <p class="txtLabel">E-mail</p>
+                 </div>
+                 <section class="fieldsec">
+                     <div class="inputField">
+                         <input type="email" name="email" class="inputText" placeholder="Informe Seu Email" autocomplete="username" required>
+                     </div>
+                 </section>
+                 <div class="txtField">
+                     <p class="txtLabel">Senha</p>
+                 </div>
+                 <section class="fieldsec">
+                     <div class="inputField">
+                         <input type="password" name="senha" class="inputText" id="inputSenha" placeholder="Informe Sua Senha" autocomplete="new-password" required>
+                     <img class="eyeopen" id="eyes" onclick="eyeopen()" src="/imgs/eye-close.png" alt="Visualizar senha - on" id="eyes">
+                        </div>
+                 </section>
+                 <div class="txtField">
+                     <p class="txtLabel">Confirmar Senha</p>
+                 </div>
+                 <section class="fieldsec">
+                     <div class="inputField">
+                         <input type="password" name="confirmar-senha" class="inputText" id="inputSenha2" placeholder="Confirme Sua Senha" autocomplete="new-password" required>
+                     </div>
+                 </section>
+             </section>
+             <div class="entrar">
+                 <button type="submit" class="btnEntrar">Cadastrar</button>
+             </div>
+         </section>
+     </form>
+     <script src="/Src/js/Cadrastro.js"></script>
+ </body>
+ </html>

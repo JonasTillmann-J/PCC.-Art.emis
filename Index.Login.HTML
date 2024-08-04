@@ -12,53 +12,46 @@
 <body>
     <section class="Nav">
         <nav class="nav">
-            <ul class="ulN">
-                <li class="liN"><a class="eleN" href="#">Sobre nós</a></li>
-                <li class="liN"><a class="eleN" href="#">Nossa Escola</a></li>
-                <li class="liN"><a class="eleN" href="#">Contatos</a></li>
-                <li class="liN"><a class="eleN" href="/Index.Cadrastro.HTML">Cadastrar-se</a></li>
+            <ul>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Nossa Escola</a></li>
+                <li><a href="/a.html">Contatos</a></li>
+                <li><a href="/Index.Cadrastro.HTML">Cadastrar-se</a></li>
             </ul>
         </nav>
     </section>
-    <section class="TLog">
-        <img class="imgLogo" src="/imgs/LogoArtMoneta.png" alt="Logo da escola Artmoneta">
-        <div class="txtlog">
-            <p class="txtEntrar">
-                Entrar
-            </p>
-        </div>
+    <form action="/Index.Login.HTML" method="post">   
+        <section class="TLog">
+            <img class="imgLogo" src="/imgs/LogoArtMoneta.png" alt="Logo da escola Artmoneta">
+            <div class="txtlog">
+                <p class="txtEntrar">Entrar</p>
+            </div>
             <section class="elementosTLog" style="position: relative; left: 5%;">
-            <div class="txtEmail">
-                <p class="txtE">
-                    E-mail
-                </p>
-            </div>
-            <section class="emailsec">
-                <div class="emailIn">
-                    <input type="email" name="Credencial-email-login" class="inputEmail" placeholder="Informe Seu Email">
+                <div class="txtEmail">
+                    <p class="txtE">E-mail</p>
                 </div>
-            </section>
-            <br>
-            <br>
-            <div class="txtSenha">
-                <p class="txtS">
-                    Senha
-                </p>
-            </div>
-            <section class="senhasec">
-                <div class="senhaIn">
-                    <input type="password" name="Credencial-senha-login" id="inputSenha" class="inputSenha" placeholder="Informe Sua Senha">
-                    <img onclick="eyeopen()" class="eyeopen" src="/imgs/eye-close.png" alt="Visualizar senha - on" id="eyes">
+                <section class="emailsec">
+                    <div class="emailIn">
+                        <input type="email" name="Credencial-email-login" class="inputEmail" placeholder="Informe Seu Email" autocomplete="username" required>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <div class="txtSenha">
+                    <p class="txtS">Senha</p>
                 </div>
+                <section class="senhasec">
+                    <div class="senhaIn">
+                        <input type="password" name="Credencial-senha-login" id="inputSenha" class="inputSenha" placeholder="Informe Sua Senha" autocomplete="current-password" required>
+                        <img onclick="eyeopen()" class="eyeopen" src="/imgs/eye-close.png" alt="Visualizar senha - close" id="eyes">
+                    </div>
+                </section>
             </section>
+            <div class="entrar">
+                <button type="submit" class="btnEntrar">Entrar</button>
+            </div>
         </section>
-        <div class="entrar">
-            <button class="btnEntrar" onclick="btnentrar()">
-                Entrar
-            </button>
-        </div>
-    </section>
+    </form>
+    <script src="/Src/js/Login.js"></script>
 </body>
-<script src="/Src/js/Script.Login.js">
-</script>
 </html>

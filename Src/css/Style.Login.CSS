@@ -1,159 +1,145 @@
-:root{
+:root {
     --tamanho: 25%;
     --margem: 20px;
-    --corTLog:rgba(0, 0, 0, 0.6); /*Cor de fundo padrão de projeto*/
+    --corTLog: rgba(0, 0, 0, 0.6);
     --tamanhobotao: 130px;
-    --tamanhoP:90%;
+    --tamanhoP: 90%;
     --tamanhoLogotxt: 300px;
 }
-*{
-    margin: 0px 0px;
-    padding: 0px 0px;
+* {
+    margin: 0;
+    padding: 0;
     font-family: monospace;
 }
-body{
+body {
     display: block;
-    background-image: url(/imgs/fundobonito.png);
+    background-image: url('/imgs/fundobonito.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:initial;
+    background-position: initial;
 }
-.logoemtexto{
-    display: block;
-    top: -25px;
-    left: 0px;
-    padding: 0px 0px;
-    margin: 5px 5px;
+.logoemtexto {
     position: absolute;
+    top: -25px;
+    left: 0;
     width: var(--tamanhoLogotxt);
-    height: calc(var(--tamanhoLogotxt)/2);
+    height: calc(var(--tamanhoLogotxt) / 2);
+    margin: 5px;
 }
-.Nav{
+.Nav {
     display: flex;
-    width: auto;
-    height: auto;
-    background-color: #ff000000;
     align-items: center;
+    background-color: transparent;
 }
-.nav{
+.nav {
+    position: absolute;
     top: 3%;
     left: 50%;
     transform: translate(-50%, -3%);
-    display: block;
-    position: absolute;
-    width: 25% auto;
-    height: 4%;
+    width: auto;
+    height: auto;
     border: 5px solid rgb(88, 148, 205);
     border-radius: 50px;
     background-color: var(--corTLog);
 }
-.nav .ulN {
-    position: relative;
-    top: 5px;
-    font-size: 1.5em;
+ul {
     list-style-type: none;
     padding: 0;
     display: flex;
-}
-
-.nav .ulN .liN {
-    margin: 0px 20px 0px 20px;
-}
-
-.nav .ulN .liN .eleN {
-    text-decoration: none;
-    color: #000000;
+    font-size: 1.5em;
     position: relative;
-    display: inline-block;
 }
-
-.nav .ulN .liN .eleN::after {
-    content: ""; /*estilo da animção*/
+.nav ul li {
+    margin: 5px 20px;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+.nav ul li a::after {
+    content: "";
     position: absolute;
     width: 100%;
-    transform: scaleX(0);
     height: 3px;
-    bottom: -4px; /*Muda altura do sublinhado*/
+    bottom: -4px;
     left: 0;
-    background-color:rgb(88, 148, 205);
+    background-color: rgb(64, 123, 178);
+    transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.9s ease-out;
 }
-
-.nav .ulN .liN .eleN:hover::after {
+.nav ul li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-
-.imgLogo{
+.imgLogo {
     position: relative;
     left: 65%;
-    margin: 20px 20px;
-    width:var(--tamanho);
-    height:calc(var(--tamanho)- 1%);
+    margin: 20px;
+    width: var(--tamanho);
+    height: calc(var(--tamanho) - 5%);
     border-radius: 100%;
 }
-.TLog{
+.TLog {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: block;
-    position: absolute;
-    margin: 0px 0px;
-    padding: 0px 0px;
+    margin: 0;
+    padding: 0;
     border: 5px solid black;
     border-radius: 50px;
     width: 559px;
-    height:70% ;
+    height: 70%;
     background-color: var(--corTLog);
 }
-.txtEntrar{
+.txtEntrar {
     position: relative;
     top: -50px;
     color: rgb(247, 216, 160);
     font-size: 4.5em;
-    margin: var(--margem) var(--margem);
+    margin: var(--margem);
     font-weight: bold;
 }
-.entrar{
+.entrar {
     position: relative;
     top: 50px;
-    align-items: center;
     text-align: center;
     width: 100%;
     height: 10%;
 }
-.btnEntrar{
+.btnEntrar {
     font-size: 35px;
     background-color: var(--corTLog);
     border-radius: 25px;
-    border: 5px solid  rgb(0, 0, 0);
+    border: 5px solid black;
     width: 40%;
     height: 100%;
 }
-.txtEmail .txtSenha { 
+.txtEmail, .txtSenha {
     position: relative;
     left: 2%;
     width: var(--tamanhoP);
 }
-.txtE{
+.txtE {
     position: relative;
     top: 30%;
     font-size: 2em;
     color: white;
 }
-.txtS{
+.txtS {
     position: relative;
     font-size: 2em;
     color: white;
 }
-.emailIn{
+.emailIn, .senhaIn {
     width: 497px;
     height: 42px;
     background-color: rgb(0, 0, 0);
     border-radius: 100px;
 }
-.inputEmail{
+.inputEmail, .inputSenha {
     left: 10%;
     border: 3px solid black;
     border-radius: 15px;
@@ -164,33 +150,7 @@ body{
     font-weight: bold;
     background-color: aliceblue;
 }
-.senhaIn{
-    width: 497px;
-    height: 42px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 100px;
-}
-.inputSenha{
-    left: 10%;
-    border: 3px solid black;
-    border-radius: 15px;
-    color: black;
-    width: 497px;
-    height: 42px;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: aliceblue;
-}
-.eyeopenBTN{
-    background-color: transparent;
-    border: 0px solid transparent;
-    position: absolute;
-    top: 85%;
-    left: 83%;
-    width: 30px;
-    height: 25px;
-}
-.eyeopen{
+.eyeopen {
     cursor: pointer;
     position: absolute;
     top: 85%;
